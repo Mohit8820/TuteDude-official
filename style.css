@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+.card {
+  border-radius: 0.8rem;
+  background: linear-gradient(to bottom, #b671cf, #3a30aa);
+  font-size: 1.8rem;
+  width: 75vw;
+  margin: 2rem auto;
+  padding: 5rem 8%;
+}
+.gradText {
+  background: linear-gradient(to bottom, #b671cf, #3a30aa);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.disFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+  border: 0.15rem solid #800780;
+}
+button:active {
+  box-shadow: none;
+}
+.logo {
+  width: 20rem;
+}
+
+header {
+  padding: 1rem 5rem;
+  box-shadow: rgb(0, 0, 0, 25%) 0px 4px 5px;
+  margin-bottom: 2rem;
+}
+header nav {
+  font-size: 1.6rem;
+  width: 40%;
+  font-weight: 500;
+}
+.buttons {
+  width: 10%;
+}
+.btn-light {
+  background-color: #fff;
+  color: #800780;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border-radius: 0.8rem;
+  border: none;
+  box-shadow: rgb(0, 0, 0, 25%) 0px 4px 5px;
+  margin-top: 4rem;
+  padding: 1rem 3rem;
+}
+.btn-fill {
+  border: none;
+  background: linear-gradient(to bottom, #b671cf, #3a30aa);
+  color: white;
+  font-weight: 500;
+}
+.login {
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: 0.5rem none linear-gradient(to bottom, #b671cf, #3a30aa);
+  position: relative;
+}
+/* .login:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 2px solid white;
+  border-left: 2px solid red;
+  width: 0;
+} */
+.sign-up {
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+main {
+  height: 75vh;
+}
+.card-light {
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+  box-shadow: rgb(0, 0, 0, 25%) 0px 4px 5px;
+  width: 100%;
+  padding: 2rem 0rem;
+  color: #800780;
+  background-color: white;
+  text-align: center;
+}
+main img {
+  width: 40%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: rgb(0, 0, 0, 25%) 0px 4px 5px;
+}
+main .disFlex {
+  margin: 4rem auto;
+  text-align: left;
+  align-items: flex-end;
+}
+/* main .btn-light {
+  margin-top: 4rem;
+  padding: 1rem 3rem;
+} */
+.how {
+  height: 5rem;
+  width: 20rem;
+  background: none;
+  font-weight: 600;
+  border: 0.3rem solid #fff;
+  color: #fff;
+  margin: 4rem auto;
+}
+.brighten {
+  text-align: left;
+  padding: 4rem 8%;
+}
+.brighten .video {
+  height: 40vh;
+  width: 40vw;
+}
+/* .brighten .btn-light {
+  margin-top: 4rem;
+  padding: 1rem 3rem;
+} */
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  /* justify-items: center; */
+  text-align: center;
+  background-color: #c182c1;
+  margin: 2rem auto;
+  padding: 2rem 15%;
+  color: #800080;
+  gap: 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.7rem;
+}
+h3 {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+.stats div {
+  display: grid;
+  align-content: center;
+  background: linear-gradient(160deg, #fefefe 40%, #c182c1);
+  width: 20vw;
+  height: 10rem;
+  padding: 0.2rem 4rem;
+  border-radius: 2rem;
+  box-shadow: rgb(0, 0, 0, 25%) 0px 4px 5px;
+  margin-bottom: 0.5rem;
+}
+
+.recipe h1 {
+  font-size: 2.4rem;
+}
+
+.recipe img {
+  width: 40%;
+  border-radius: 0.5rem;
+}
