@@ -4,63 +4,67 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>TuteDude</title>
   </head>
   <body>
-    <header>
-      <img src="Tutedude.png" alt="logo" />
-      <nav>
+    <header class="disFlex">
+      <img class="logo" src="Tutedude.png" alt="logo" />
+      <nav class="disFlex gradText">
         <a href="">explore programs</a>
         <a href="">offers</a>
         <a href="">refund advantage</a>
         <a href="">about us</a>
       </nav>
-      <div>
-        <button>login</button>
-        <button>sign up</button>
+      <div class="buttons disFlex">
+        <button class="login"><div class="gradText">login</div></button>
+        <button class="btn-fill sign-up">sign up</button>
       </div>
     </header>
-    <main>
-      <h3>An IIT Delhi Alumni Initiative</h3>
-      <div>
+    <main class="card">
+      <h2 class="card-light">An IIT Delhi Alumni Initiative</h2>
+      <div class="disFlex">
         <div>
           <p>The only programme with</p>
           <h2>FULL REFUND</h2>
           <p>on course completion</p>
-          <button>know HOW?</button>
+          <button class="btn-light">know HOW?</button>
         </div>
-        <img src="" alt="illustration" />
+        <img src="illustration.png" alt="illustration" />
       </div>
-      <button>How does it work?</button>
+      <button class="how">How does it work?</button>
     </main>
 
-    <section>
+    <section class="card disFlex brighten">
       <div>
         <h3>Brighten up Yourself with some Latest Skills</h3>
         <p>
           learn any skill at your own pace with personal mentorship and
           immediate doubt clearing by your own dude.
         </p>
-        <button>Explore Programs</button>
+        <button class="btn-light">Explore Programs</button>
       </div>
-      <button>
-        <img src="" alt="illustration" />
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="#800780"
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-          >
-            <path d="M3 22v-20l18 10-18 10z" />
-          </svg>
-          <span>Know About Tutedude</span>
-        </div>
+      <button class="video">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="#800780"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+        >
+          <path d="M3 22v-20l18 10-18 10z" />
+        </svg>
+        <span>Know About Tutedude</span>
       </button>
     </section>
 
-    <section class="stats wid">
+    <section class="stats">
       <div>
         <h3>21</h3>
         courses
@@ -81,6 +85,505 @@
       <div>
         <h3>5 min</h3>
         doubt clearance by experts
+      </div>
+    </section>
+
+    <section class="recipe">
+      <h1 class="gradText">The TuteDude recipe of success</h1>
+      <div class="card">
+        <div class="disFlex">
+          <img
+            src="computing_work_background_computer_lightbulb_digital_elements_sketch_6853111.jpg"
+            alt="comp"
+          />
+          <ul>
+            <li><h2>Learn at your own pace</h2></li>
+            <li>Structured premium curriculum</li>
+            <li>1:1 mentoring & Doubt solving in 5 minutes</li>
+            <li>Develop killer real-world projects</li>
+          </ul>
+        </div>
+        <button class="btn-light">Explore Programs</button>
+      </div>
+    </section>
+
+    <section class="money-back card disFlex">
+      <img src="reward.jpg" alt="reward" class="rewardsImg" />
+      <div>
+        <div class="leftAlign">
+          <h3 class="card-fill">TuteDude Money Back Offer</h3>
+          <h3 class="gridDis">
+            <span>avail</span>
+            <img src="100.png" alt="100" class="hundred" />
+            Money Back reward
+          </h3>
+          <p>
+            You pay ZERO on copleting the Tutedude online certification courses,
+            become eligible for Tutedude REFUND PROGRAMME, and get Tutedude
+            Certified at the cost of zero INR
+          </p>
+        </div>
+
+        <button class="btn-light">Know More</button>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h3 class="gradText">Select Your Skills</h3>
+
+      <div class="categories disFlex">
+        <h3 class="gradText leftAlign">Categories</h3>
+        <div class="disFlex">
+          <button class="btn-light">Technical</button>
+          <button class="btn-light">Business</button>
+          <button class="btn-light">Visual Arts</button>
+          <button class="btn-light">Creatives</button>
+        </div>
+      </div>
+      <div class="course-container">
+        <div class="courses card">
+          <div>
+            <h3 class="leftAlign">Python</h3>
+            <div class="disFlex">
+              <div class="leftAlign">
+                <p class="disFlex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M24 12c0 6.627-5.373 12-12 12s-12-5.373-12-12c0-.808.083-1.596.234-2.359h2.076c-.188.759-.31 1.543-.31 2.359 0 5.514 4.486 10 10 10s10-4.486 10-10-4.486-10-10-10c-2.234 0-4.292.744-5.957 1.989l2.049 2.049-7.012 1.354 1.354-7.013 2.183 2.183c2.036-1.598 4.594-2.562 7.383-2.562 6.627 0 12 5.373 12 12zm-13-6v8h7v-2h-5v-6h-2z"
+                    /></svg
+                  ><span> 38 hours</span>
+                </p>
+                <p class="disFlex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M13.5 8c.276 0 .5.224.5.5v7c0 .276-.224.5-.5.5h-11c-.276 0-.5-.224-.5-.5v-7c0-.276.224-.5.5-.5h11zm2.5 0c0-1.104-.896-2-2-2h-12c-1.104 0-2 .896-2 2v8c0 1.104.896 2 2 2h12c1.104 0 2-.896 2-2v-8zm6 1.854v4.293l-2-1.408v-1.478l2-1.407zm2-3.854l-6 4.223v3.554l6 4.223v-12z"
+                    /></svg
+                  ><span> lectures</span>
+                </p>
+              </div>
+              <img src="Screenshot 2021-11-27 003607.jpg" alt="addImg" />
+            </div>
+            <button class="btn-light">view course</button>
+          </div>
+        </div>
+
+        <div class="courses card">
+          <div>
+            <h3 class="leftAlign">Python</h3>
+            <div class="disFlex">
+              <div class="leftAlign">
+                <p class="disFlex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M24 12c0 6.627-5.373 12-12 12s-12-5.373-12-12c0-.808.083-1.596.234-2.359h2.076c-.188.759-.31 1.543-.31 2.359 0 5.514 4.486 10 10 10s10-4.486 10-10-4.486-10-10-10c-2.234 0-4.292.744-5.957 1.989l2.049 2.049-7.012 1.354 1.354-7.013 2.183 2.183c2.036-1.598 4.594-2.562 7.383-2.562 6.627 0 12 5.373 12 12zm-13-6v8h7v-2h-5v-6h-2z"
+                    /></svg
+                  ><span> 38 hours</span>
+                </p>
+                <p class="disFlex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M13.5 8c.276 0 .5.224.5.5v7c0 .276-.224.5-.5.5h-11c-.276 0-.5-.224-.5-.5v-7c0-.276.224-.5.5-.5h11zm2.5 0c0-1.104-.896-2-2-2h-12c-1.104 0-2 .896-2 2v8c0 1.104.896 2 2 2h12c1.104 0 2-.896 2-2v-8zm6 1.854v4.293l-2-1.408v-1.478l2-1.407zm2-3.854l-6 4.223v3.554l6 4.223v-12z"
+                    /></svg
+                  ><span> lectures</span>
+                </p>
+              </div>
+              <img src="Screenshot 2021-11-27 003607.jpg" alt="addImg" />
+            </div>
+            <button class="btn-light">view course</button>
+          </div>
+        </div>
+
+        <div class="courses card">
+          <div>
+            <h3 class="leftAlign">Python</h3>
+            <div class="disFlex">
+              <div class="leftAlign">
+                <p class="disFlex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M24 12c0 6.627-5.373 12-12 12s-12-5.373-12-12c0-.808.083-1.596.234-2.359h2.076c-.188.759-.31 1.543-.31 2.359 0 5.514 4.486 10 10 10s10-4.486 10-10-4.486-10-10-10c-2.234 0-4.292.744-5.957 1.989l2.049 2.049-7.012 1.354 1.354-7.013 2.183 2.183c2.036-1.598 4.594-2.562 7.383-2.562 6.627 0 12 5.373 12 12zm-13-6v8h7v-2h-5v-6h-2z"
+                    /></svg
+                  ><span> 38 hours</span>
+                </p>
+                <p class="disFlex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M13.5 8c.276 0 .5.224.5.5v7c0 .276-.224.5-.5.5h-11c-.276 0-.5-.224-.5-.5v-7c0-.276.224-.5.5-.5h11zm2.5 0c0-1.104-.896-2-2-2h-12c-1.104 0-2 .896-2 2v8c0 1.104.896 2 2 2h12c1.104 0 2-.896 2-2v-8zm6 1.854v4.293l-2-1.408v-1.478l2-1.407zm2-3.854l-6 4.223v3.554l6 4.223v-12z"
+                    /></svg
+                  ><span> lectures</span>
+                </p>
+              </div>
+              <img src="Screenshot 2021-11-27 003607.jpg" alt="addImg" />
+            </div>
+            <button class="btn-light">view course</button>
+          </div>
+        </div>
+
+        <div class="courses card">
+          <div>
+            <h3 class="leftAlign">Python</h3>
+            <div class="disFlex">
+              <div class="leftAlign">
+                <p class="disFlex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M24 12c0 6.627-5.373 12-12 12s-12-5.373-12-12c0-.808.083-1.596.234-2.359h2.076c-.188.759-.31 1.543-.31 2.359 0 5.514 4.486 10 10 10s10-4.486 10-10-4.486-10-10-10c-2.234 0-4.292.744-5.957 1.989l2.049 2.049-7.012 1.354 1.354-7.013 2.183 2.183c2.036-1.598 4.594-2.562 7.383-2.562 6.627 0 12 5.373 12 12zm-13-6v8h7v-2h-5v-6h-2z"
+                    /></svg
+                  ><span> 38 hours</span>
+                </p>
+                <p class="disFlex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M13.5 8c.276 0 .5.224.5.5v7c0 .276-.224.5-.5.5h-11c-.276 0-.5-.224-.5-.5v-7c0-.276.224-.5.5-.5h11zm2.5 0c0-1.104-.896-2-2-2h-12c-1.104 0-2 .896-2 2v8c0 1.104.896 2 2 2h12c1.104 0 2-.896 2-2v-8zm6 1.854v4.293l-2-1.408v-1.478l2-1.407zm2-3.854l-6 4.223v3.554l6 4.223v-12z"
+                    /></svg
+                  ><span> lectures</span>
+                </p>
+              </div>
+              <img src="Screenshot 2021-11-27 003607.jpg" alt="addImg" />
+            </div>
+            <button class="btn-light">view course</button>
+          </div>
+        </div>
+
+        <div class="courses card">
+          <div>
+            <h3 class="leftAlign">Python</h3>
+            <div class="disFlex">
+              <div class="leftAlign">
+                <p class="disFlex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M24 12c0 6.627-5.373 12-12 12s-12-5.373-12-12c0-.808.083-1.596.234-2.359h2.076c-.188.759-.31 1.543-.31 2.359 0 5.514 4.486 10 10 10s10-4.486 10-10-4.486-10-10-10c-2.234 0-4.292.744-5.957 1.989l2.049 2.049-7.012 1.354 1.354-7.013 2.183 2.183c2.036-1.598 4.594-2.562 7.383-2.562 6.627 0 12 5.373 12 12zm-13-6v8h7v-2h-5v-6h-2z"
+                    /></svg
+                  ><span> 38 hours</span>
+                </p>
+                <p class="disFlex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M13.5 8c.276 0 .5.224.5.5v7c0 .276-.224.5-.5.5h-11c-.276 0-.5-.224-.5-.5v-7c0-.276.224-.5.5-.5h11zm2.5 0c0-1.104-.896-2-2-2h-12c-1.104 0-2 .896-2 2v8c0 1.104.896 2 2 2h12c1.104 0 2-.896 2-2v-8zm6 1.854v4.293l-2-1.408v-1.478l2-1.407zm2-3.854l-6 4.223v3.554l6 4.223v-12z"
+                    /></svg
+                  ><span> lectures</span>
+                </p>
+              </div>
+              <img src="Screenshot 2021-11-27 003607.jpg" alt="addImg" />
+            </div>
+            <button class="btn-light">view course</button>
+          </div>
+        </div>
+
+        <div class="courses card">
+          <div>
+            <h3 class="leftAlign">Python</h3>
+            <div class="disFlex">
+              <div class="leftAlign">
+                <p class="disFlex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M24 12c0 6.627-5.373 12-12 12s-12-5.373-12-12c0-.808.083-1.596.234-2.359h2.076c-.188.759-.31 1.543-.31 2.359 0 5.514 4.486 10 10 10s10-4.486 10-10-4.486-10-10-10c-2.234 0-4.292.744-5.957 1.989l2.049 2.049-7.012 1.354 1.354-7.013 2.183 2.183c2.036-1.598 4.594-2.562 7.383-2.562 6.627 0 12 5.373 12 12zm-13-6v8h7v-2h-5v-6h-2z"
+                    /></svg
+                  ><span> 38 hours</span>
+                </p>
+                <p class="disFlex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M13.5 8c.276 0 .5.224.5.5v7c0 .276-.224.5-.5.5h-11c-.276 0-.5-.224-.5-.5v-7c0-.276.224-.5.5-.5h11zm2.5 0c0-1.104-.896-2-2-2h-12c-1.104 0-2 .896-2 2v8c0 1.104.896 2 2 2h12c1.104 0 2-.896 2-2v-8zm6 1.854v4.293l-2-1.408v-1.478l2-1.407zm2-3.854l-6 4.223v3.554l6 4.223v-12z"
+                    /></svg
+                  ><span> lectures</span>
+                </p>
+              </div>
+              <img src="Screenshot 2021-11-27 003607.jpg" alt="addImg" />
+            </div>
+            <button class="btn-light">view course</button>
+          </div>
+        </div>
+
+        <div class="courses card">
+          <div>
+            <h3 class="leftAlign">Python</h3>
+            <div class="disFlex">
+              <div class="leftAlign">
+                <p class="disFlex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M24 12c0 6.627-5.373 12-12 12s-12-5.373-12-12c0-.808.083-1.596.234-2.359h2.076c-.188.759-.31 1.543-.31 2.359 0 5.514 4.486 10 10 10s10-4.486 10-10-4.486-10-10-10c-2.234 0-4.292.744-5.957 1.989l2.049 2.049-7.012 1.354 1.354-7.013 2.183 2.183c2.036-1.598 4.594-2.562 7.383-2.562 6.627 0 12 5.373 12 12zm-13-6v8h7v-2h-5v-6h-2z"
+                    /></svg
+                  ><span> 38 hours</span>
+                </p>
+                <p class="disFlex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M13.5 8c.276 0 .5.224.5.5v7c0 .276-.224.5-.5.5h-11c-.276 0-.5-.224-.5-.5v-7c0-.276.224-.5.5-.5h11zm2.5 0c0-1.104-.896-2-2-2h-12c-1.104 0-2 .896-2 2v8c0 1.104.896 2 2 2h12c1.104 0 2-.896 2-2v-8zm6 1.854v4.293l-2-1.408v-1.478l2-1.407zm2-3.854l-6 4.223v3.554l6 4.223v-12z"
+                    /></svg
+                  ><span> lectures</span>
+                </p>
+              </div>
+              <img src="Screenshot 2021-11-27 003607.jpg" alt="addImg" />
+            </div>
+            <button class="btn-light">view course</button>
+          </div>
+        </div>
+
+        <div class="courses card">
+          <div>
+            <h3 class="leftAlign">Python</h3>
+            <div class="disFlex">
+              <div class="leftAlign">
+                <p class="disFlex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M24 12c0 6.627-5.373 12-12 12s-12-5.373-12-12c0-.808.083-1.596.234-2.359h2.076c-.188.759-.31 1.543-.31 2.359 0 5.514 4.486 10 10 10s10-4.486 10-10-4.486-10-10-10c-2.234 0-4.292.744-5.957 1.989l2.049 2.049-7.012 1.354 1.354-7.013 2.183 2.183c2.036-1.598 4.594-2.562 7.383-2.562 6.627 0 12 5.373 12 12zm-13-6v8h7v-2h-5v-6h-2z"
+                    /></svg
+                  ><span> 38 hours</span>
+                </p>
+                <p class="disFlex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M13.5 8c.276 0 .5.224.5.5v7c0 .276-.224.5-.5.5h-11c-.276 0-.5-.224-.5-.5v-7c0-.276.224-.5.5-.5h11zm2.5 0c0-1.104-.896-2-2-2h-12c-1.104 0-2 .896-2 2v8c0 1.104.896 2 2 2h12c1.104 0 2-.896 2-2v-8zm6 1.854v4.293l-2-1.408v-1.478l2-1.407zm2-3.854l-6 4.223v3.554l6 4.223v-12z"
+                    /></svg
+                  ><span> lectures</span>
+                </p>
+              </div>
+              <img src="Screenshot 2021-11-27 003607.jpg" alt="addImg" />
+            </div>
+            <button class="btn-light">view course</button>
+          </div>
+        </div>
+
+        <div class="courses card">
+          <div>
+            <h3 class="leftAlign">Python</h3>
+            <div class="disFlex">
+              <div class="leftAlign">
+                <p class="disFlex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M24 12c0 6.627-5.373 12-12 12s-12-5.373-12-12c0-.808.083-1.596.234-2.359h2.076c-.188.759-.31 1.543-.31 2.359 0 5.514 4.486 10 10 10s10-4.486 10-10-4.486-10-10-10c-2.234 0-4.292.744-5.957 1.989l2.049 2.049-7.012 1.354 1.354-7.013 2.183 2.183c2.036-1.598 4.594-2.562 7.383-2.562 6.627 0 12 5.373 12 12zm-13-6v8h7v-2h-5v-6h-2z"
+                    /></svg
+                  ><span> 38 hours</span>
+                </p>
+                <p class="disFlex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M13.5 8c.276 0 .5.224.5.5v7c0 .276-.224.5-.5.5h-11c-.276 0-.5-.224-.5-.5v-7c0-.276.224-.5.5-.5h11zm2.5 0c0-1.104-.896-2-2-2h-12c-1.104 0-2 .896-2 2v8c0 1.104.896 2 2 2h12c1.104 0 2-.896 2-2v-8zm6 1.854v4.293l-2-1.408v-1.478l2-1.407zm2-3.854l-6 4.223v3.554l6 4.223v-12z"
+                    /></svg
+                  ><span> lectures</span>
+                </p>
+              </div>
+              <img src="Screenshot 2021-11-27 003607.jpg" alt="addImg" />
+            </div>
+            <button class="btn-light">view course</button>
+          </div>
+        </div>
+
+        <div class="courses card">
+          <div>
+            <h3 class="leftAlign">Python</h3>
+            <div class="disFlex">
+              <div class="leftAlign">
+                <p class="disFlex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M24 12c0 6.627-5.373 12-12 12s-12-5.373-12-12c0-.808.083-1.596.234-2.359h2.076c-.188.759-.31 1.543-.31 2.359 0 5.514 4.486 10 10 10s10-4.486 10-10-4.486-10-10-10c-2.234 0-4.292.744-5.957 1.989l2.049 2.049-7.012 1.354 1.354-7.013 2.183 2.183c2.036-1.598 4.594-2.562 7.383-2.562 6.627 0 12 5.373 12 12zm-13-6v8h7v-2h-5v-6h-2z"
+                    /></svg
+                  ><span> 38 hours</span>
+                </p>
+                <p class="disFlex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M13.5 8c.276 0 .5.224.5.5v7c0 .276-.224.5-.5.5h-11c-.276 0-.5-.224-.5-.5v-7c0-.276.224-.5.5-.5h11zm2.5 0c0-1.104-.896-2-2-2h-12c-1.104 0-2 .896-2 2v8c0 1.104.896 2 2 2h12c1.104 0 2-.896 2-2v-8zm6 1.854v4.293l-2-1.408v-1.478l2-1.407zm2-3.854l-6 4.223v3.554l6 4.223v-12z"
+                    /></svg
+                  ><span> lectures</span>
+                </p>
+              </div>
+              <img src="Screenshot 2021-11-27 003607.jpg" alt="addImg" />
+            </div>
+            <button class="btn-light">view course</button>
+          </div>
+        </div>
+      </div>
+      <button class="btn-fill see-more">view All Courses</button>
+    </section>
+
+    <section class="hear">
+      <h3 class="gradText">Hear, what others have to say</h3>
+      <div class="disFlex">
+        <div class="others">
+          <div class="intro">
+            <img
+              src="Screenshot 2021-11-27 131729.jpg"
+              alt="person"
+              width="75px"
+              height="auto"
+            />
+            <div>
+              <h4 class="gradText">Anuj Desai</h4>
+              <span class="grey">Student, NSIT (Delhi)</span>
+            </div>
+          </div>
+          <p>
+            A good review should describe various aspects of the customer
+            experience. Did the customer recieve fantastic cutomer service? Was
+            an employee particularly helpful, and did the customer leave the
+            employee's name in the review... <a href="#">read more</a>
+          </p>
+        </div>
+
+        <div class="others">
+          <div class="intro">
+            <img
+              src="Screenshot 2021-11-27 131729.jpg"
+              alt="person"
+              width="75px"
+              height="auto"
+            />
+            <div>
+              <h4 class="gradText">Anuj Desai</h4>
+              <span class="grey">Student, NSIT (Delhi)</span>
+            </div>
+          </div>
+          <p>
+            A good review should describe various aspects of the customer
+            experience. Did the customer recieve fantastic cutomer service? Was
+            an employee particularly helpful, and did the customer leave the
+            employee's name in the review... <a href="#">read more</a>
+          </p>
+        </div>
+        <button class="next-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="arrow"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            ></path>
+          </svg>
+        </button>
       </div>
     </section>
   </body>
