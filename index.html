@@ -25,6 +25,31 @@
       <div class="buttons disFlex">
         <button class="login"><div class="gradText">login</div></button>
         <button class="btn-fill sign-up">sign up</button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="menu"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <style type="text/css">
+            .menu {
+              stroke: url(#MyGradient);
+            }
+          </style>
+          <defs>
+            <linearGradient id="MyGradient">
+              <stop offset="5%" stop-color="#b671cf" />
+              <stop offset="95%" stop-color="#3a30aa" />
+            </linearGradient>
+          </defs>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="3"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
       </div>
     </header>
     <main class="card">
@@ -50,7 +75,7 @@
         </p>
         <button class="btn-light">Explore Programs</button>
       </div>
-      <button class="video">
+      <button class="video disFlex">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="#800780"
@@ -108,6 +133,10 @@
     </section>
 
     <section class="money-back card disFlex">
+      <div class="mview">
+        <img src="100.png" alt="100" width="150rem" />
+        <p>Money Back reward</p>
+      </div>
       <img src="reward.jpg" alt="reward" class="rewardsImg" />
       <div>
         <div class="leftAlign">
@@ -527,7 +556,7 @@
     <section class="hear">
       <h3 class="gradText">Hear, what others have to say</h3>
       <div class="disFlex">
-        <div class="others">
+        <div class="others first-other">
           <div class="intro">
             <img src="Screenshot 2021-11-27 131729.jpg" alt="person" />
             <div>

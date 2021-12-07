@@ -88,6 +88,7 @@ header nav {
 }
 .login {
   padding: 0.8rem 1.2rem;
+  width: 9rem;
   border-radius: 0rem;
   font-weight: 500;
   background: white;
@@ -106,10 +107,16 @@ header nav {
   z-index: -1;
 }
 .sign-up {
+  width: 9rem;
   padding: 0.8rem 1.2rem;
   border-radius: 0.5rem;
   font-weight: 500;
 }
+.menu {
+  width: 3.3rem;
+  display: none;
+}
+
 main {
   height: 58rem;
 }
@@ -162,8 +169,8 @@ main .disFlex {
   background-position: center;
   border: none;
   color: #8a158a;
-  font-weight: 500;
-  padding: 10rem;
+  font-weight: 700;
+  padding: 5rem;
   align-self: center;
 }
 .video svg {
@@ -216,6 +223,9 @@ h3 {
 
 .recipe h1 {
   font-size: 2.4rem;
+}
+.mview {
+  display: none;
 }
 .recipe .card {
   margin: 2rem auto;
@@ -316,7 +326,7 @@ h3 {
   color: white;
   background-color: #800780;
   font-weight: 600;
-  width: 80%;
+  width: 40rem;
 }
 
 .skills {
@@ -475,7 +485,7 @@ h3 {
   align-items: center;
   position: absolute;
   top: 50%;
-  transform: translate(0%, -50%);
+  transform: translate(100%, -50%);
   right: 1rem;
   box-shadow: rgb(0, 0, 0, 30%) 0px 3px 5px;
 }
@@ -695,15 +705,212 @@ footer a {
   html {
     font-size: 55%;
   }
-  @media (max-width: 1000px) {
-    html {
-      font-size: 50%;
-    }
-    @media (max-width: 800px) {
-      html {
-        font-size: 45%;
-      }
-  /* .rewardsImg {
+}
+@media (max-width: 1000px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 890px) {
+  html {
+    font-size: 45%;
+  }
+  .other-courses {
+    flex-direction: column;
+  }
+  .search {
+    width: 80rem;
+  }
+  .menu {
+    display: inline;
+  }
+  header nav {
+    display: none !important;
+  }
+  header {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 750px) {
+  html {
+    font-size: 40%;
+  }
+  .courses {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  .courses {
+    display: none;
+  }
+  .card {
+    width: 97vw;
+  }
+  header {
+    padding: 1rem 3rem;
+  }
+  .search {
+    width: 60rem;
+  }
+  .others {
+    width: 40rem;
+    height: 35rem;
+  }
+  .hear {
+    width: 100vw;
+  }
+  .first-other {
+    margin-left: 20rem;
+  }
+  .next-btn {
+    transform: translate(0, -50%);
+  }
+  .skills {
+    width: 100vw;
+  }
+  .categories .leftAlign {
+    margin: 0 3rem;
+  }
+  header {
+    margin: 0;
+  }
+  main.card {
+    margin: 0 !important;
+    width: 100vw;
+    border-radius: 0 !important;
+  }
+  main .disFlex {
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  main img {
+    display: none;
+  }
+  .icons {
+    grid-template-columns: 30px 30px;
+  }
+  .brighten {
+    margin: 0 auto;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    gap: 2.5rem;
+  }
+  .brighten .btn-light {
+    display: none;
+  }
+  .video {
+    width: 20rem;
+    border-radius: 0.5rem;
+  }
+  .stats {
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+  }
+  .stats div {
+    padding: 0;
+    width: 18rem;
+  }
+
+  .recipe .card {
+    margin-top: 15rem;
+    position: relative;
+  }
+  .recipe .card .disFlex {
+    padding-top: 15rem;
+    flex-direction: column;
+  }
+  .recipe .card .disFlex img {
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, 70%);
+    width: 40rem;
+  }
+  .recipe .card .btn-light {
+    display: none;
+  }
+
+  .money-back {
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
+  }
+  .rewardsImg {
+    width: 35rem;
+    height: 25rem;
+    border-radius: 2rem;
+  }
+  .money-back h3 {
+    display: none;
+  }
+  .mview {
+    display: inline;
+  }
+  .money-back p {
+    margin-top: 0.5rem;
+  }
+  .money-back .btn-light {
+    margin-top: 1rem;
+  }
+
+  .first-other {
+    margin-left: 10rem;
+  }
+  .others {
+    height: 40rem;
+  }
+
+  /* .other-courses {
+    padding-left: 1rem;
+    margin: 2rem auto;
+  } */
+
+  .other-courses-card {
+    width: 42rem;
+    height: 25rem;
+    margin-left: 0rem;
+    border-radius: 2rem;
+    padding: 1.5rem 8rem;
+  }
+  .other-courses-card h3 {
+    color: #fe03b3;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: left;
+    font-size: 2.4rem;
+  }
+  .other-courses-card span {
+    color: #000;
+    font-size: 1.8rem;
+  }
+  .other-courses-card p {
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+  .other-courses-card .btn-light {
+    margin-top: 1rem;
+  }
+
+  .query-grid {
+    grid-template-columns: 1fr;
+  }
+  .search {
+    width: 42rem;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}
+
+/* .rewardsImg {
     height: 35rem;
   }
   .money-back .gridDis {
@@ -736,4 +943,3 @@ footer a {
     font-size: 1.4rem;
     margin: 0.6rem 0;
   } */
-}
