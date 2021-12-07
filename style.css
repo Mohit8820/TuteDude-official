@@ -24,7 +24,7 @@ html {
   font-size: 1.8rem;
   width: 75vw;
   margin: 4rem auto;
-  padding: 5rem 8%;
+  padding: 5rem 7%;
 }
 .gradText {
   background: linear-gradient(to bottom, #b671cf, #3a30aa);
@@ -110,7 +110,7 @@ header nav {
   font-weight: 500;
 }
 main {
-  height: 60rem;
+  height: 58rem;
 }
 .card-light {
   margin: 1rem auto;
@@ -123,13 +123,14 @@ main {
   text-align: center;
 }
 main img {
-  width: 50rem;
+  min-width: 55%;
   height: 25rem;
   border-radius: 0.5rem;
   box-shadow: rgb(0, 0, 0, 25%) 0px 4px 5px;
 }
 main .disFlex {
   margin: 4rem auto;
+  gap: 4rem;
   text-align: left;
   align-items: flex-end;
 }
@@ -148,11 +149,11 @@ main .disFlex {
 }
 .brighten {
   text-align: left;
-  padding: 4rem 8%;
+  gap: 4rem;
 }
 .brighten .video {
-  height: 40vh;
-  width: 40vw;
+  height: 40%;
+  width: 60%;
   background-image: url(illustration.png);
   background-position: center;
   border: none;
@@ -166,10 +167,12 @@ main .disFlex {
   border: 0.3rem solid #800780;
   border-radius: 0.5rem;
 }
-/* .brighten .btn-light {
-  margin-top: 4rem;
-  padding: 1rem 3rem;
-} */
+.brighten p {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  text-align: justify;
+  font-weight: 400;
+}
 
 .stats {
   display: grid;
@@ -264,10 +267,9 @@ h3 {
 }
 
 .money-back {
-  padding: 0 6%;
+  padding: 0 4%;
   margin: 6rem auto;
-  gap: 6rem;
-  height: 40rem;
+  gap: 2rem;
   font-size: 1.6rem;
   font-weight: 500;
   align-items: flex-start;
@@ -275,8 +277,8 @@ h3 {
   box-shadow: rgb(0, 0, 0, 25%) 0px 4px 5px;
 }
 .rewardsImg {
-  height: 100%;
-  width: 40rem;
+  height: 40rem;
+  width: 40%;
   box-shadow: rgb(0, 0, 0, 25%) 4px 0px 5px;
 }
 .gridDis {
@@ -320,11 +322,16 @@ h3 {
   margin: 2rem auto;
 }
 .categories .disFlex {
-  gap: 4rem;
+  height: 8rem;
+  overflow-x: scroll;
 }
 .categories .btn-light {
   margin-top: 0%;
+  min-width: 18rem;
+  height: 5rem;
+  padding: 0rem;
   position: relative;
+  margin-left: 2rem;
   box-shadow: rgba(0, 0, 0, 0.103) 0px 4px 5px;
 }
 .categories .btn-light::before {
@@ -349,25 +356,31 @@ h3 {
   width: 75vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
   align-content: center;
   justify-content: center;
   align-items: center;
   justify-items: center;
 }
 .courses {
-  width: 35rem;
+  width: 32rem;
+  height: 26rem;
   padding: 2rem;
   box-shadow: rgb(0, 0, 0, 20%) 0px 4px 5px;
   margin-bottom: 1rem;
 }
 .courses h3 {
   font-weight: 600;
+  font-size: 1.8rem;
 }
 .courses p.disFlex {
   gap: 1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 .courses img {
   border-radius: 0.8rem;
+  width: 12rem;
 }
 .see-more {
   width: 30rem;
@@ -547,6 +560,7 @@ h3 {
   font-weight: 600;
   font-size: 2rem;
   box-shadow: rgb(0, 0, 0, 50%) 0px 4px 5px;
+  z-index: 999;
 }
 
 .query {
@@ -661,4 +675,23 @@ footer a {
   display: grid;
   grid-template-columns: 30px 30px 30px 30px;
   gap: 1rem;
+}
+
+/*.............*/
+@media (max-width: 1235px) {
+  .rewardsImg {
+    height: 35rem;
+  }
+  .money-back .gridDis {
+    margin-top: 1.5rem;
+  }
+  .money-back .btn-light {
+    margin-top: 1.5rem;
+  }
+  .money-back p {
+    margin-top: 2.5rem;
+  }
+  main img {
+    width: 40rem;
+  }
 }
