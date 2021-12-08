@@ -14,80 +14,83 @@
     <title>TuteDude</title>
   </head>
   <body>
-    <header class="disFlex">
-      <img class="logo" src="Tutedude.png" alt="logo" />
-      <nav class="disFlex gradText">
-        <a href="">explore programs</a>
-        <a href="">offers</a>
-        <a href="">refund advantage</a>
-        <a href="">about us</a>
-      </nav>
-      <div class="buttons disFlex">
-        <button class="login"><div class="gradText">login</div></button>
-        <button class="btn-fill sign-up">sign up</button>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="menu"
-          fill="currentColor"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <style type="text/css">
-            .menu {
-              stroke: url(#MyGradient);
-            }
-          </style>
-          <defs>
-            <linearGradient id="MyGradient">
-              <stop offset="5%" stop-color="#b671cf" />
-              <stop offset="95%" stop-color="#3a30aa" />
-            </linearGradient>
-          </defs>
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="3"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
-      </div>
-    </header>
-    <main class="card">
-      <h2 class="card-light">An IIT Delhi Alumni Initiative</h2>
-      <div class="disFlex">
-        <div>
-          <p>The only programme with</p>
-          <h2>FULL REFUND</h2>
-          <p>on course completion</p>
-          <button class="btn-light">know HOW?</button>
+    <div class="bg">
+      <header class="disFlex">
+        <img class="logo" src="Tutedude.png" alt="logo" />
+        <nav class="disFlex gradText">
+          <a href="">explore programs</a>
+          <a href="">offers</a>
+          <a href="">refund advantage</a>
+          <a href="">about us</a>
+        </nav>
+        <div class="buttons disFlex">
+          <button class="login"><div class="gradText">login</div></button>
+          <button class="btn-fill sign-up">sign up</button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="menu"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <style type="text/css">
+              .menu {
+                stroke: url(#MyGradient);
+              }
+            </style>
+            <defs>
+              <linearGradient id="MyGradient">
+                <stop offset="5%" stop-color="#b671cf" />
+                <stop offset="95%" stop-color="#3a30aa" />
+              </linearGradient>
+            </defs>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="3"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
         </div>
-        <img src="illustration.png" alt="illustration" />
-      </div>
-      <button class="how">How does it work?</button>
-    </main>
+      </header>
+      <main class="card">
+        <h2 class="card-light">An IIT Delhi Alumni Initiative</h2>
+        <div class="disFlex">
+          <div>
+            <p>The only programme with</p>
+            <h2>FULL REFUND</h2>
+            <p>on course completion</p>
+            <button class="btn-light know-how">know HOW?</button>
+          </div>
+          <img src="illustration.png" alt="illustration" />
+        </div>
+        <button class="how">How does it work?</button>
+        <button class="btn-light explore mview">Explore Programs</button>
+      </main>
 
-    <section class="card disFlex brighten">
-      <div>
-        <h3>Brighten up Yourself with some Latest Skills</h3>
-        <p>
-          learn any skill at your own pace with personal mentorship and
-          immediate doubt clearing by your own dude.
-        </p>
-        <button class="btn-light">Explore Programs</button>
-      </div>
-      <button class="video disFlex">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="#800780"
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-        >
-          <path d="M3 22v-20l18 10-18 10z" />
-        </svg>
-        <span>Know About Tutedude</span>
-      </button>
-    </section>
+      <section class="card disFlex brighten">
+        <div>
+          <h3>Brighten up Yourself with some Latest Skills</h3>
+          <p>
+            learn any skill at your own pace with personal mentorship and
+            immediate doubt clearing by your own dude.
+          </p>
+          <button class="btn-light">Explore Programs</button>
+        </div>
+        <button class="video disFlex">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#800780"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+          >
+            <path d="M3 22v-20l18 10-18 10z" />
+          </svg>
+          <span>Know About Tutedude</span>
+        </button>
+      </section>
+    </div>
 
     <section class="stats">
       <div>
@@ -114,12 +117,13 @@
     </section>
 
     <section class="recipe">
-      <h1 class="gradText">The TuteDude recipe of success</h1>
+      <h1 class="gradText recipe-head">The TuteDude recipe of success</h1>
       <div class="card">
         <div class="disFlex">
           <img
             src="computing_work_background_computer_lightbulb_digital_elements_sketch_6853111.jpg"
             alt="comp"
+            class="comp"
           />
           <ul>
             <li><h2>Learn at your own pace</h2></li>
@@ -134,7 +138,7 @@
 
     <section class="money-back card disFlex">
       <div class="mview">
-        <img src="100.png" alt="100" width="150rem" />
+        <img src="100 mview.png" alt="100" width="150rem" />
         <p>Money Back reward</p>
       </div>
       <img src="reward.jpg" alt="reward" class="rewardsImg" />
@@ -153,16 +157,16 @@
           </p>
         </div>
 
-        <button class="btn-light">Know More</button>
+        <button class="btn-light know-more">Know More</button>
       </div>
     </section>
 
     <section class="skills">
-      <h3 class="gradText">Select Your Skills</h3>
-
+      <h3 class="gradText recipe-head">Select Your Skills</h3>
+      <h3 class="gradText leftAlign mview">Categories:</h3>
       <div class="categories disFlex">
         <h3 class="gradText leftAlign">Categories:</h3>
-        <div class="disFlex">
+        <div class="disFlex btns">
           <button class="btn-light">Technical</button>
           <button class="btn-light">Business</button>
           <button class="btn-light">Visual Arts</button>
