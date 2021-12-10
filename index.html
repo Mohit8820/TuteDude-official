@@ -559,7 +559,7 @@
 
     <section class="hear">
       <h3 class="gradText">Hear, what others have to say</h3>
-      <div class="disFlex">
+      <div class="disFlex" id="next">
         <div class="others first-other">
           <div class="intro">
             <img src="Screenshot 2021-11-27 131729.jpg" alt="person" />
@@ -591,23 +591,23 @@
             employee's name in the review... <a href="#">read more</a>
           </p>
         </div>
-        <button class="next-btn">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="arrow"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 5l7 7-7 7"
-            ></path>
-          </svg>
-        </button>
       </div>
+      <button class="next-btn" id="slide">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="arrow"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          ></path>
+        </svg>
+      </button>
     </section>
 
     <section class="other-courses-sec">
@@ -847,5 +847,12 @@
         </ul>
       </div>
     </footer>
+    <script>
+      const button = document.getElementById("slide");
+
+      button.onclick = function () {
+        document.getElementById("next").scrollLeft += 200;
+      };
+    </script>
   </body>
 </html>
