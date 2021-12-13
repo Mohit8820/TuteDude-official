@@ -907,6 +907,10 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
+      var closedModalHashStateId = "#modalClosed";
+      var openModalHashStateId = "#modalOpen";
+      window.location.hash = closedModalHashStateId;
+
       // Get the modal
       var modal = document.getElementById("myModal");
 
@@ -919,29 +923,48 @@
       // When the user clicks the button, open the modal
       btn.onclick = function () {
         modal.style.display = "block";
+        window.location.hash = openModalHashStateId;
       };
 
       // When the user clicks on <span> (x), close the modal
       span.onclick = function () {
         modal.style.display = "none";
+        window.history.back();
       };
 
       // When the user clicks anywhere outside of the modal, close it
       window.onclick = function (event) {
         if (event.target == modal) {
           modal.style.display = "none";
+          window.history.back();
         }
       };
 
-      if (window.history && window.history.pushState) {
-        modal.on("show.bs.modal", function (e) {
-          window.history.pushState("forward", null, "./#modal");
-        });
-
+      (function () {
+        var activeOpenedModalId = null;
+        var isHidingModalByPopState = false;
+        $(document)
+          .on("show.bs.modal", ".modal", function () {
+            activeOpenedModalId = $(this).attr("id");
+            window.location.hash = activeOpenedModalId;
+          })
+          .on("hide.bs.modal", ".modal", function () {
+            if (!isHidingModalByPopState) {
+              window.history.back();
+            }
+            isHidingModalByPopState = false;
+            activeOpenedModalId = null;
+          });
         $(window).on("popstate", function () {
-          modal.modal("hide");
+          if (
+            activeOpenedModalId &&
+            window.location.hash !== "#" + activeOpenedModalId
+          ) {
+            isHidingModalByPopState = true;
+            $("#" + activeOpenedModalId).modal("hide");
+          }
         });
-      }
+      })();
     </script>
   </body>
 </html>
