@@ -25,57 +25,26 @@
           <a href="">about us</a>
         </nav>
         <div class="buttons disFlex">
-          <button class="login" id="myBtn">
+          <button class="login" id="logBtn">
             <div class="gradText">login</div>
           </button>
-
-          <div id="myModal" class="modal">
+          <div id="log" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
-              <span class="close">&times;</span>
+              <span class="close" id="log-close">&times;</span>
               <form action="">
                 <div class="container">
                   <img class="logo" src="Tutedude.png" alt="logo" />
-                  <p class="disFlex">
+                  <a class="disFlex">
                     <img
                       class="google"
                       src="5847f9cbcef1014c0b5e48c8.png"
                       alt=""
                     />
-                    Sign Up with Google
-                  </p>
+                    Google Sign In
+                  </a>
                   <h3>OR</h3>
-                  <div class="border">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="modal-icon"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <style type="text/css">
-                        .modal-icon {
-                          stroke: url(#MyGra);
-                        }
-                      </style>
-                      <defs>
-                        <linearGradient id="MyGra">
-                          <stop offset="5%" stop-color="#b671cf" />
-                          <stop offset="95%" stop-color="#3a30aa" />
-                        </linearGradient>
-                      </defs>
-                      <path
-                        d="M19 7.001c0 3.865-3.134 7-7 7s-7-3.135-7-7c0-3.867 3.134-7.001 7-7.001s7 3.134 7 7.001zm-1.598 7.18c-1.506 1.137-3.374 1.82-5.402 1.82-2.03 0-3.899-.685-5.407-1.822-4.072 1.793-6.593 7.376-6.593 9.821h24c0-2.423-2.6-8.006-6.598-9.819z"
-                      />
-                    </svg>
-                    <input
-                      type="text"
-                      placeholder="Full Name"
-                      name="name"
-                      required
-                    />
-                  </div>
+
                   <div class="border">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -87,11 +56,11 @@
                     >
                       <style type="text/css">
                         .modal-icon {
-                          stroke: url(#MyGrad);
+                          stroke: url(#logMyGra) !important;
                         }
                       </style>
                       <defs>
-                        <linearGradient id="MyGrad">
+                        <linearGradient id="logMyGra">
                           <stop offset="5%" stop-color="#b671cf" />
                           <stop offset="95%" stop-color="#3a30aa" />
                         </linearGradient>
@@ -120,11 +89,147 @@
                     >
                       <style type="text/css">
                         .modal-icon {
-                          stroke: url(#MyGrad);
+                          stroke: url(#logMyGrad);
                         }
                       </style>
                       <defs>
-                        <linearGradient id="MyGrad">
+                        <linearGradient id="logMyGrad">
+                          <stop offset="5%" stop-color="#b671cf" />
+                          <stop offset="95%" stop-color="#3a30aa" />
+                        </linearGradient>
+                      </defs>
+                      <path
+                        d="M12.804 9c1.038-1.793 2.977-3 5.196-3 3.311 0 6 2.689 6 6s-2.689 6-6 6c-2.219 0-4.158-1.207-5.196-3h-3.804l-1.506-1.503-1.494 1.503-1.48-1.503-1.52 1.503-3-3.032 2.53-2.968h10.274zm7.696 1.5c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.672-1.5-1.5.672-1.5 1.5-1.5z"
+                      />
+                    </svg>
+                    <input
+                      type="password"
+                      placeholder="Password (min. 6 characters)"
+                      name="psw"
+                      required
+                    />
+                  </div>
+                  <div class="checkandforgot">
+                    <div class="check disFlex">
+                      <label class="checkbox">
+                        <input type="checkbox" /><span class="checkmark"></span>
+                      </label>
+                      <span>Keep me Logged In</span>
+                    </div>
+                    <a href="">forgot Password?</a>
+                  </div>
+
+                  <button type="submit" class="signupbtn btn-fill">
+                    Sign Up
+                  </button>
+                  <span class="orLogin"
+                    >New User?
+                    <a href=""><strong>Register here</strong></a></span
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <button class="btn-fill sign-up" id="signBtn">sign up</button>
+
+          <!-- /****************signup modal**************************/ -->
+          <div id="sign" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close" id="sign-close">&times;</span>
+              <form action="">
+                <div class="container">
+                  <img class="logo" src="Tutedude.png" alt="logo" />
+                  <a class="disFlex">
+                    <img
+                      class="google"
+                      src="5847f9cbcef1014c0b5e48c8.png"
+                      alt=""
+                    />
+                    Sign Up with Google
+                  </a>
+                  <h3>OR</h3>
+                  <div class="border">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="modal-ico"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <style type="text/css">
+                        .modal-ico {
+                          stroke: url(#sigMyGra);
+                        }
+                      </style>
+                      <defs>
+                        <linearGradient id="sigMyGra">
+                          <stop offset="5%" stop-color="#b671cf" />
+                          <stop offset="95%" stop-color="#3a30aa" />
+                        </linearGradient>
+                      </defs>
+                      <path
+                        d="M19 7.001c0 3.865-3.134 7-7 7s-7-3.135-7-7c0-3.867 3.134-7.001 7-7.001s7 3.134 7 7.001zm-1.598 7.18c-1.506 1.137-3.374 1.82-5.402 1.82-2.03 0-3.899-.685-5.407-1.822-4.072 1.793-6.593 7.376-6.593 9.821h24c0-2.423-2.6-8.006-6.598-9.819z"
+                      />
+                    </svg>
+                    <input
+                      type="text"
+                      placeholder="Full Name"
+                      name="name"
+                      required
+                    />
+                  </div>
+                  <div class="border">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      class="modal-ico"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <style type="text/css">
+                        .modal-ico {
+                          stroke: url(#sigMyGrad);
+                        }
+                      </style>
+                      <defs>
+                        <linearGradient id="sigMyGrad">
+                          <stop offset="5%" stop-color="#b671cf" />
+                          <stop offset="95%" stop-color="#3a30aa" />
+                        </linearGradient>
+                      </defs>
+                      <path
+                        d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"
+                      />
+                    </svg>
+                    <input
+                      type="text"
+                      placeholder="Enter Email"
+                      name="email"
+                      required
+                    />
+                  </div>
+
+                  <div class="border">
+                    <svg
+                      class="modal-ico"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                    >
+                      <style type="text/css">
+                        .modal-ico {
+                          stroke: url(#sigMyGrad);
+                        }
+                      </style>
+                      <defs>
+                        <linearGradient id="sigMyGrad">
                           <stop offset="5%" stop-color="#b671cf" />
                           <stop offset="95%" stop-color="#3a30aa" />
                         </linearGradient>
@@ -145,18 +250,18 @@
                     <svg
                       width="24"
                       height="24"
-                      class="modal-icon"
+                      class="modal-ico"
                       xmlns="http://www.w3.org/2000/svg"
-                      fill-rule="evenodd"
+                      fill-rule="none"
                       clip-rule="evenodd"
                     >
                       <style type="text/css">
-                        .modal-icon {
-                          stroke: url(#MyGrad);
+                        .modal-ico {
+                          stroke: url(#sigMyGrad);
                         }
                       </style>
                       <defs>
-                        <linearGradient id="MyGrad">
+                        <linearGradient id="sigMyGrad">
                           <stop offset="5%" stop-color="#b671cf" />
                           <stop offset="95%" stop-color="#3a30aa" />
                         </linearGradient>
@@ -184,7 +289,7 @@
             </div>
           </div>
 
-          <button class="btn-fill sign-up">sign up</button>
+          <!-- *********************** -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="menu"
@@ -1016,10 +1121,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
       // Get the modal
-      var modal = document.getElementById("myModal");
+      var log = document.getElementById("log");
+      var sign = document.getElementById("sign");
+      var logclose = document.getElementById("log-close");
+      var signclose = document.getElementById("sign-close");
 
       // Get the button that opens the modal
-      var btn = document.getElementById("myBtn");
+      var signbtn = document.getElementById("signBtn");
+      var logbtn = document.getElementById("logBtn");
 
       // Get the <span> element that closes the modal
       var span = document.getElementsByClassName("close")[0];
@@ -1027,25 +1136,40 @@
       window.addEventListener("popstate", detectHistory);
 
       // When the user clicks the button, open the modal
-      btn.onclick = function () {
-        modal.style.display = "block";
+      logbtn.onclick = function () {
+        log.style.display = "block";
+        window.history.pushState({ id: 1 }, null, "q=1234&u=beware");
+      };
+      signbtn.onclick = function () {
+        sign.style.display = "block";
         window.history.pushState({ id: 1 }, null, "q=1234&u=beware");
       };
 
       // When the user clicks on <span> (x), close the modal
-      span.onclick = function () {
-        modal.style.display = "none";
+      logclose.onclick = function () {
+        log.style.display = "none";
+        history.back();
+      };
+      signclose.onclick = function () {
+        sign.style.display = "none";
+        history.back();
       };
 
       // When the user clicks anywhere outside of the modal, close it
       window.onclick = function (event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
+        if (event.target == sign) {
+          sign.style.display = "none";
+          history.back();
+        }
+        if (event.target == log) {
+          log.style.display = "none";
+          history.back();
         }
       };
 
       function detectHistory() {
-        modal.style.display = "none";
+        sign.style.display = "none";
+        log.style.display = "none";
       }
     </script>
   </body>
