@@ -227,12 +227,6 @@ html {
   padding: 16px;
 }
 
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .signupbtn {
-    width: 100%;
-  }
-}
 /************modal************/
 
 .hear .disFlex,
@@ -279,7 +273,7 @@ button:active {
 header {
   padding: 1rem 10rem;
   box-shadow: rgb(0, 0, 0, 25%) 0px 4px 5px;
-  margin-bottom: 2rem;
+  background-color: #fff;
 }
 header nav {
   font-size: 1.6rem;
@@ -289,6 +283,7 @@ header nav {
 }
 .buttons {
   gap: 2rem;
+  background: none;
 }
 .btn-light {
   background-color: #fff;
@@ -308,26 +303,34 @@ header nav {
   font-weight: 500;
   box-shadow: rgb(0, 0, 0, 25%) 0px 4px 5px;
 }
+.login-container {
+  background-color: #fff;
+  height: 4rem;
+  width: 9rem;
+  border-radius: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.6, #b671cf),
+    color-stop(0.1, #3a30aa)
+  );
+}
 .login {
   padding: 0.8rem 1.2rem;
-  width: 9rem;
+  width: 8.8rem;
+  height: 3.8rem;
   border-radius: 0rem;
   font-weight: 500;
-  background: white;
   border: none;
   position: relative;
+  background-color: #fff;
 }
-.login::before {
-  border-radius: 0.5rem;
-  content: "";
-  background-image: linear-gradient(to bottom, #b671cf, #3a30aa);
-  top: -0.8px;
-  left: -0.8px;
-  bottom: -0.8px;
-  right: -0.8px;
-  position: absolute;
-  z-index: -1;
-}
+
 .sign-up {
   width: 9rem;
   padding: 0.8rem 1.2rem;
@@ -339,12 +342,25 @@ header nav {
   display: none;
 }
 
+.bg {
+  background: #ecd9ec !important;
+  padding-bottom: 4rem;
+}
+
 main {
-  height: 58rem;
+  height: 55rem;
+  width: 75vw;
+  margin: 4rem auto 0;
+  font-size: 1.8rem;
+  background: #ecd9ec !important;
+  color: #800780;
+  margin-top: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 .card-light {
-  margin: 1rem auto;
-  border-radius: 0.5rem;
+  margin: 6rem auto 1rem;
+  border-radius: 1rem;
   box-shadow: rgb(0, 0, 0, 25%) 0px 4px 5px;
   width: 100%;
   padding: 2rem 0rem;
@@ -354,27 +370,44 @@ main {
 }
 main img {
   min-width: 55%;
-  height: 25rem;
-  border-radius: 0.5rem;
+  height: 30rem;
+  border-radius: 1rem;
   box-shadow: rgb(0, 0, 0, 25%) 0px 4px 5px;
 }
 main .disFlex {
-  margin: 4rem auto;
+  margin: 5rem auto;
   gap: 4rem;
   text-align: left;
-  align-items: flex-end;
+  font-size: 2rem;
+  align-items: center;
 }
 /* main .btn-light {
   margin-top: 4rem;
   padding: 1rem 3rem;
 } */
+main .disFlex div:first-child {
+  font-weight: 600;
+  width: 28rem;
+}
+main .disFlex div:first-child h2 {
+  font-size: 4.5rem;
+}
+.know-how {
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: rgb(0, 0, 0, 25%) 0px 4px 5px;
+  margin-top: 4rem;
+  padding: 1rem 5rem;
+}
 .how {
   height: 5rem;
   width: 20rem;
   background: none;
   font-weight: 600;
-  border: 0.3rem solid #fff;
-  color: #fff;
+  border: 0.3rem solid #800780;
+  color: #800780;
   margin: 2rem auto;
 }
 .brighten {
@@ -383,6 +416,7 @@ main .disFlex {
   height: 38rem;
   align-items: flex-start;
   justify-content: space-between;
+  margin-bottom: 0;
 }
 .brighten .video {
   width: 50%;
@@ -418,8 +452,8 @@ main .disFlex {
   /* justify-items: center; */
   text-align: center;
   background-color: #c182c1;
-  margin: 2rem auto 6rem;
-  padding: 4rem 15%;
+  margin: 0rem auto;
+  padding: 6rem 15%;
   color: #800080;
   gap: 1rem;
   font-size: 1.8rem;
@@ -443,8 +477,13 @@ h3 {
   margin-bottom: 0.5rem;
 }
 
-.recipe h1 {
+.recipe {
+  background: #f2f2fe;
+  padding-bottom: 6rem;
+}
+.recipe-head {
   font-size: 2.4rem;
+  padding-top: 6rem;
 }
 .mview {
   display: none;
@@ -504,14 +543,15 @@ h3 {
 }
 
 .money-back {
-  padding: 0 4%;
-  margin: 6rem auto;
-  gap: 2rem;
+  padding: 0 13%;
+  margin: 0 auto;
+  gap: 3rem;
   font-size: 1.6rem;
   font-weight: 500;
   align-items: flex-start;
-  border-radius: 1.5rem 0 1.5rem 0;
+  border-radius: 0;
   box-shadow: rgb(0, 0, 0, 25%) 0px 4px 5px;
+  width: 100vw;
 }
 .rewardsImg {
   height: 40rem;
@@ -523,7 +563,8 @@ h3 {
   grid-auto-flow: column;
   align-items: center;
   margin-top: 3rem;
-  gap: 0.1rem;
+  gap: 0.2rem;
+  justify-content: start;
 }
 .hundred {
   width: 18rem;
@@ -550,10 +591,13 @@ h3 {
   font-weight: 600;
   width: 40rem;
 }
-
+.bg-blue {
+  background: linear-gradient(to bottom, #f2f2fe 55%, #fff 30%);
+}
 .skills {
-  margin: 2rem auto;
+  margin: 0 auto;
   width: 75vw;
+  padding-top: 2rem;
 }
 .categories {
   margin: 2rem auto;
@@ -816,7 +860,7 @@ h3 {
   width: 100%;
   height: 5rem;
   margin: 1.5rem auto;
-  background-color: #d0d0d0;
+  background-color: #e0cbe0;
 
   font-size: 1.6rem;
   text-decoration: none;
@@ -1155,6 +1199,7 @@ footer a {
   }
   .bg {
     background: linear-gradient(to bottom, #b671cf 20%, #3a30aa);
+    padding-bottom: 0;
   }
   header {
     /* align-items: flex-end;
@@ -1167,6 +1212,10 @@ footer a {
   }
   .buttons {
     gap: 0.7rem;
+  }
+  .login-container {
+    width: 6.1rem;
+    height: 3.1rem;
   }
   .login,
   .sign-up {
@@ -1184,10 +1233,8 @@ footer a {
     margin-right: 1rem;
     width: 7rem;
   }
-  main.card {
-    background: none;
-    padding: 3rem 0rem;
-    height: auto;
+  main {
+    height: 44rem;
   }
   main p {
     font-size: 1.4rem;
@@ -1195,13 +1242,16 @@ footer a {
   }
   .card-light {
     font-size: 1.8rem;
-    margin: 3rem auto;
+    margin: 4rem auto;
     border-radius: 0.5rem;
     box-shadow: rgb(0, 0, 0, 25%) 0px 4px 5px;
-    width: 75%;
+    width: 100%;
     padding: 2rem 0rem;
     color: #800780;
     background-color: white;
+  }
+  main .disFlex div:first-child h2 {
+    font-size: 2.4rem;
   }
   .know-how {
     margin: 1.2rem auto;
@@ -1215,6 +1265,7 @@ footer a {
     font-size: 1.3rem;
     font-weight: 600;
     margin-top: 0;
+    border-radius: 0.5rem;
   }
   .explore {
     display: block;
@@ -1222,20 +1273,22 @@ footer a {
     border-radius: 0.5rem;
     box-shadow: rgb(0, 0, 0, 20%) 0px 4px 5px;
     padding: 1rem 2rem;
-    /* color: white;
-    background-color: #800780; */
+    color: white;
+    background-color: #800780;
 
     width: 23rem;
     height: 4.5rem;
     border: none;
     font-size: 1.5rem;
-    /* font-weight: 500; */
+    font-weight: 500;
   }
 
   .brighten {
     font-size: 1.4rem;
     font-weight: 400;
     height: auto;
+    background: #dcb9dc;
+    color: #800780;
   }
   .brighten h3 {
     font-size: 1.8rem;
@@ -1248,10 +1301,10 @@ footer a {
   }
 
   .stats {
-    width: 97vw;
     margin: 0 auto;
     line-height: 1.8rem;
     font-size: 1.6rem;
+    background: linear-gradient(to bottom, #b671cf, #3a30aa);
   }
   .stats h3 {
     font-size: 2rem;
@@ -1266,9 +1319,28 @@ footer a {
     margin-bottom: 0.5rem;
   }
 
+  .recipe {
+    padding-bottom: 2rem;
+    background: none;
+  }
   .recipe .card {
+    box-shadow: rgb(0, 0, 0, 25%) 0px 4px 5px;
+
+    color: #3a30aa;
     padding-right: 0;
     margin-top: 11rem;
+    background: conic-gradient(
+      at 6rem,
+      #e6d8f1,
+      #fff 5%,
+      #e6d8f1 30%,
+      #fff 35%,
+      #e6d8f1 50%,
+      #fff 55%,
+      #e6d8f1 70%,
+      #fff 75%,
+      #e6d8f1 100%
+    );
   }
   .recipe-head {
     margin: 3rem auto 1rem;
@@ -1287,6 +1359,9 @@ footer a {
     font-size: 1.3rem;
     font-weight: 600;
   }
+  .recipe ul li::after {
+    background: linear-gradient(to bottom, #b671cf, #3a30aa);
+  }
   .recipe ul li:last-child {
     margin-bottom: 8rem;
   }
@@ -1299,11 +1374,13 @@ footer a {
     box-shadow: rgb(0, 0, 0, 30%) 0px 3px 5px;
   }
 
+  .bg-blue {
+    background: linear-gradient(to bottom, #fff 20%, #e4dbf0 10%);
+  }
   .money-back {
-    margin-top: 2rem;
     color: white;
     padding: 2rem 4rem 2rem;
-    border-radius: 0.8rem;
+    border-radius: 2rem;
     box-shadow: rgb(0, 0, 0, 25%) 0px 4px 5px;
     background: linear-gradient(to right, #b46fcf, #8657c1);
     font-weight: 600;
@@ -1325,6 +1402,9 @@ footer a {
     border-radius: 0.5rem;
   }
 
+  .skills {
+    background: #efe4ef;
+  }
   .skills .gradText {
     font-size: 1.8rem;
     font-weight: 600;
@@ -1430,9 +1510,6 @@ footer a {
     border-radius: 2rem;
     padding: 1rem 5rem;
   }
-  .other-courses-card {
-    margin-left: 0rem;
-  }
   .other-courses-card h3 {
     margin-bottom: 0.5rem;
     font-size: 1.8rem;
@@ -1469,6 +1546,16 @@ footer a {
   }
   .other-courses-card::after {
     right: 2%;
+    background: conic-gradient(
+      at 50%,
+      #800780,
+      #800780cc 20%,
+      #800780 30%,
+      #800780c0 50%,
+      #800780 80%,
+      #800780b9 90%,
+      #800780
+    );
   }
 
   .query {
