@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>TuteDude</title>
   </head>
-  <body>
+  <body onload="startTimer()">
     <div class="bg">
       <header class="disFlex">
         <img class="logo" src="Tutedude.png" alt="logo" />
@@ -390,12 +390,25 @@
             src="computing_work_background_computer_lightbulb_digital_elements_sketch_6853111.jpg"
             alt="comp"
             class="comp"
+            id="im"
           />
-          <ul>
-            <li><h2>Learn at your own pace</h2></li>
-            <li>Structured premium curriculum</li>
-            <li>1:1 mentoring & Doubt solving in 5 minutes</li>
-            <li>Develop killer real-world projects</li>
+          <ul id="ulist">
+            <div class="li-cont">
+              <div class="after"></div>
+              <li>Learn at your own pace</li>
+            </div>
+            <div class="li-cont">
+              <div class="after"></div>
+              <li>Structured premium curriculum</li>
+            </div>
+            <div class="li-cont">
+              <div class="after"></div>
+              <li>1:1 mentoring & Doubt solving in 5 minutes</li>
+            </div>
+            <div class="li-cont">
+              <div class="after"></div>
+              <li>Develop killer real-world projects</li>
+            </div>
           </ul>
         </div>
         <button class="btn-light">Explore Programs</button>
@@ -1115,6 +1128,7 @@
         </ul>
       </div>
     </footer>
+    <script src="script.js" charset="utf-8"></script>
     <script>
       const button = document.getElementById("slide");
 

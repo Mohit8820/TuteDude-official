@@ -492,10 +492,15 @@ h3 {
   margin: 2rem auto;
 }
 .recipe img {
-  width: 40%;
+  width: 45%;
   border-radius: 1rem;
+  transition: all 0.5s;
+}
+.recipe ul {
+  width: 40%;
 }
 .recipe ul li {
+  transition: all 0.5s;
   position: relative;
   margin-bottom: 6rem;
   font-size: 1.6rem;
@@ -503,12 +508,22 @@ h3 {
   padding-left: 2.4rem;
   text-align: left;
 }
-.recipe ul li:last-child {
-  margin-bottom: 0;
+
+.li-cont {
+  position: relative;
 }
-.recipe ul li:after {
+
+.recipe li:hover {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.act {
+  color: #000;
+  font-size: 2rem;
+}
+
+.recipe ul .after {
   /* bullets */
-  content: url("iconmonstr-triangle-1-2401.png");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -518,8 +533,12 @@ h3 {
   border-radius: 0.8rem;
   width: 4rem;
   height: 4rem;
-  background: white;
+  background: rgb(240, 240, 240);
   transform: translate(-50%, -30%);
+}
+.after-act {
+  width: 4.5rem !important;
+  height: 4.5rem;
 }
 .recipe ul li:before {
   /* lines */
@@ -531,10 +550,7 @@ h3 {
   height: 9rem;
   width: 2px;
 }
-.recipe ul li:first-child::after {
-  width: 6rem;
-  height: 6rem;
-}
+
 .recipe ul li:first-child:before {
   top: 2px;
 }
@@ -1353,25 +1369,39 @@ footer a {
     -webkit-text-fill-color: white;
     box-shadow: rgb(0, 0, 0, 25%) 0px 4px 5px;
   }
+  .recipe ul {
+    width: 100%;
+  }
   .recipe ul li {
     margin-bottom: 4rem;
     padding-left: 4rem;
     font-size: 1.3rem;
     font-weight: 600;
   }
-  .recipe ul li::after {
+  .recipe ul .after {
     background: linear-gradient(to bottom, #b671cf, #3a30aa);
   }
   .recipe ul li:last-child {
-    margin-bottom: 8rem;
+    margin-bottom: 5rem;
   }
   .comp {
     width: 28rem !important;
+    height: 18.5rem;
     top: -50% !important;
     left: 50% !important;
     transform: translate(-50%, 90%) !important;
     border-radius: 0.5rem !important;
     box-shadow: rgb(0, 0, 0, 30%) 0px 3px 5px;
+  }
+  .recipe li:hover {
+    font-size: 1.8rem;
+  }
+  .act {
+    font-size: 1.8rem !important;
+  }
+  .li-cont-act {
+    width: 5rem;
+    height: 4rem;
   }
 
   .bg-blue {
