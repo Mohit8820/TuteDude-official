@@ -49,7 +49,6 @@ signclose.onclick = function () {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-
   if (event.target == sign) {
     sign.style.display = "none";
     history.back();
@@ -186,6 +185,7 @@ var technical = document.getElementsByClassName("technical");
 var creatives = document.getElementsByClassName("creatives");
 var business = document.getElementsByClassName("business");
 var arts = document.getElementsByClassName("arts");
+var seeAll = document.getElementById("see-all");
 
 technicalBtn.onclick = function () {
   for (i = 0; i < all; i++) {
@@ -219,5 +219,10 @@ businessBtn.onclick = function () {
   }
   for (j = 0; j < business.length; j++) {
     business[j].style.display = "block";
+  }
+};
+seeAll.onclick = function () {
+  for (i = 0; i < all; i++) {
+    allcourse[i].style.display = "block";
   }
 };
