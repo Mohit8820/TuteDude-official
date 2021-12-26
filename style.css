@@ -217,10 +217,12 @@ html {
   transform: rotate(45deg);
 }
 
-.orLogin,
-.orLogin a {
+.orLogin {
   color: #8a158a;
   font-size: 1.3rem;
+}
+.orLogin strong {
+  cursor: pointer;
 }
 /* Add padding to container elements */
 .container {

@@ -1,3 +1,70 @@
+const button = document.getElementById("slide");
+
+button.onclick = function () {
+  document.getElementById("next").scrollLeft += 200;
+};
+
+// Get the modal
+var log = document.getElementById("log");
+var sign = document.getElementById("sign");
+var logclose = document.getElementById("log-close");
+var signclose = document.getElementById("sign-close");
+
+// Get the button that opens the modal
+var signbtn = document.getElementById("signBtn");
+var logbtn = document.getElementById("logBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+window.addEventListener("popstate", detectHistory);
+
+function orlog() {
+  sign.style.display = "none";
+  log.style.display = "block";
+}
+function orsign() {
+  sign.style.display = "block";
+  log.style.display = "none";
+}
+// When the user clicks the button, open the modal
+logbtn.onclick = function () {
+  log.style.display = "block";
+  window.history.pushState({ id: 1 }, null, "q=1234&u=beware");
+};
+signbtn.onclick = function () {
+  sign.style.display = "block";
+  window.history.pushState({ id: 1 }, null, "q=1234&u=beware");
+};
+
+// When the user clicks on <span> (x), close the modal
+logclose.onclick = function () {
+  log.style.display = "none";
+  history.back();
+};
+signclose.onclick = function () {
+  sign.style.display = "none";
+  history.back();
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+
+  if (event.target == sign) {
+    sign.style.display = "none";
+    history.back();
+  }
+  if (event.target == log) {
+    log.style.display = "none";
+    history.back();
+  }
+};
+
+function detectHistory() {
+  sign.style.display = "none";
+  log.style.display = "none";
+}
+
 var li = document.getElementById("ulist").getElementsByTagName("li");
 var after = document.getElementById("ulist").getElementsByClassName("after");
 
@@ -106,3 +173,51 @@ function displayNextImage() {
   li[x].classList.add("act");
   after[x].classList.add("after-act");
 }
+
+var courseBtn = document.getElementsByClassName("courseBtn");
+
+var allcourse = document.getElementsByClassName("courses");
+var all = allcourse.length;
+var technicalBtn = document.getElementById("technical-btn");
+var creativesBtn = document.getElementById("creatives-btn");
+var businessBtn = document.getElementById("business-btn");
+var artsBtn = document.getElementById("arts-btn");
+var technical = document.getElementsByClassName("technical");
+var creatives = document.getElementsByClassName("creatives");
+var business = document.getElementsByClassName("business");
+var arts = document.getElementsByClassName("arts");
+
+technicalBtn.onclick = function () {
+  for (i = 0; i < all; i++) {
+    allcourse[i].style.display = "none";
+  }
+  for (j = 0; j < technical.length; j++) {
+    technical[j].style.display = "block";
+  }
+};
+creativesBtn.onclick = function () {
+  for (i = 0; i < all; i++) {
+    allcourse[i].style.display = "none";
+  }
+  for (j = 0; j < creatives.length; j++) {
+    creatives[j].style.display = "block";
+  }
+};
+
+artsBtn.onclick = function () {
+  for (i = 0; i < all; i++) {
+    allcourse[i].style.display = "none";
+  }
+  for (j = 0; j < arts.length; j++) {
+    arts[j].style.display = "block";
+  }
+};
+
+businessBtn.onclick = function () {
+  for (i = 0; i < all; i++) {
+    allcourse[i].style.display = "none";
+  }
+  for (j = 0; j < business.length; j++) {
+    business[j].style.display = "block";
+  }
+};
