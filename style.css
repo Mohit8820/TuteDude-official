@@ -728,12 +728,6 @@ h3 {
   border-radius: 0.8rem;
   width: 12rem;
 }
-.see-more {
-  width: 30rem;
-  height: 5rem;
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
-}
 
 .hear {
   position: relative;
@@ -1512,16 +1506,6 @@ footer a {
     font-weight: 600;
     font-size: 1.4rem;
     margin-left: 2rem;
-  }
-  .see-more {
-    width: 17rem;
-    height: 4rem;
-    padding: 0.5rem;
-    font-weight: 500;
-    text-align: center;
-    font-size: 1.6rem;
-    border-radius: 1rem;
-    border: none;
   }
 
   .hear {
