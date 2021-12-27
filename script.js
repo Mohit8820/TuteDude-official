@@ -226,3 +226,50 @@ seeAll.onclick = function () {
     allcourse[i].style.display = "block";
   }
 };
+
+var query = document.getElementsByClassName("query-asked");
+var minus = document.getElementsByClassName("minus");
+var plus = document.getElementsByClassName("plus");
+
+for (var i = 0; i < 4; i++) {
+  query[i].addEventListener("click", function () {
+    var value = this.innerHTML;
+    console.log(this.classList);
+    var min = $(this).children(".query-asked button").children(".minus");
+    var plu = $(this).children(".query-asked button").children(".plus");
+    min.toggle();
+    plu.toggle();
+    var divToSlide = jQuery(this).children(".query-ans");
+    divToSlide.toggleClass("show");
+    $(this).toggleClass("active-query", 500);
+    console.log(value);
+
+    var buttonOnSlide = jQuery(this).children(".query-asked button");
+
+    // if (
+    //   buttonOnSlide.html() ==
+    //   `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-12v-2h12v2z"/></svg>`
+    // )
+    //   buttonOnSlide.html(
+    //     `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/></svg>`
+    //   );
+    // else
+    //   buttonOnSlide.html(
+    //     `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-12v-2h12v2z"/></svg>`
+    //   );
+
+    // if (value == "Learn at your own pace") {
+    //   var val = 1;
+    // }
+    // if (value == "Structured premium curriculum") {
+    //   var val = 2;
+    // }
+    // if (value == "1:1 mentoring &amp; Doubt solving in 5 minutes") {
+    //   var val = 3;
+    // }
+    // if (value == "Develop killer real-world projects") {
+    //   var val = 4;
+    // }
+    // change(val);
+  });
+}
