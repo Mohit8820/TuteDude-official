@@ -708,6 +708,25 @@ h3 {
   align-items: center;
   justify-items: center;
 }
+/**********************************changes***********************************************************/
+.mview-course {
+  display: none !important;
+}
+.inner-box {
+  width: 30rem;
+  height: 26rem;
+  border: 0.3rem solid #3a30aa;
+  border-radius: 1.2rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.inner-box img {
+  margin: 1rem auto;
+  width: 25rem;
+  height: 18rem;
+}
+/**********************************changes***********************************************************/
+
 .courses {
   width: 32rem;
   height: 26rem;
@@ -1312,6 +1331,12 @@ footer a {
   .courses {
     display: none !important;
   }
+  /**********************************changes***********************************************************/
+  .mview-course {
+    display: inline !important;
+  }
+
+  /**********************************changes***********************************************************/
 }
 
 @media (max-width: 780px) {
@@ -1431,6 +1456,11 @@ footer a {
   .money-back .btn-light {
     margin-top: 1rem;
   }
+  /**************************change**************************/
+  .course-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  /**************************change**************************/
 
   .first-other {
     margin-left: 10rem;
@@ -1728,6 +1758,9 @@ footer a {
 
   .skills {
     background: #efe4ef;
+    /**********************change*****************************/
+    padding-bottom: 2rem;
+    /**********************change*****************************/
   }
   .skills .gradText {
     font-size: 1.8rem;
@@ -1755,6 +1788,17 @@ footer a {
     font-size: 1.4rem;
     margin-left: 2rem;
   }
+  /**************************change**************************/
+  .inner-box {
+    width: 18rem;
+    height: 18rem;
+    font-size: 1.4rem;
+  }
+  .inner-box img {
+    width: 16rem;
+    height: 12rem;
+  }
+  /**************************change**************************/
 
   .hear {
     background: linear-gradient(to bottom, #fff 50%, #b671cf 50%);

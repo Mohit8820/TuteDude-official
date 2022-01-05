@@ -170,6 +170,10 @@ function displayNextImage() {
 var courseBtn = document.getElementsByClassName("courseBtn");
 
 var allcourse = document.getElementsByClassName("courses");
+/*************************change**************** */
+var allMviewcourse = document.getElementsByClassName("mview-course");
+/*************************change**************** */
+
 var all = allcourse.length;
 var technicalBtn = document.getElementById("technical-btn");
 var creativesBtn = document.getElementById("creatives-btn");
@@ -185,6 +189,13 @@ technicalBtn.onclick = function () {
   for (i = 0; i < all; i++) {
     allcourse[i].style.display = "none";
   }
+  /*************************change**************** */
+
+  for (k = 0; k < allMviewcourse.length; k++) {
+    allMviewcourse[k].style.setProperty("display", "none", "important");
+  }
+  /*************************change**************** */
+
   for (j = 0; j < technical.length; j++) {
     technical[j].style.display = "block";
   }
@@ -193,6 +204,12 @@ creativesBtn.onclick = function () {
   for (i = 0; i < all; i++) {
     allcourse[i].style.display = "none";
   }
+  /*************************change**************** */
+
+  for (k = 0; k < allMviewcourse.length; k++) {
+    allMviewcourse[k].style.setProperty("display", "none", "important");
+  }
+  /*************************change**************** */
   for (j = 0; j < creatives.length; j++) {
     creatives[j].style.display = "block";
   }
@@ -202,6 +219,12 @@ artsBtn.onclick = function () {
   for (i = 0; i < all; i++) {
     allcourse[i].style.display = "none";
   }
+  /*************************change**************** */
+
+  for (k = 0; k < allMviewcourse.length; k++) {
+    allMviewcourse[k].style.setProperty("display", "none", "important");
+  }
+  /*************************change**************** */
   for (j = 0; j < arts.length; j++) {
     arts[j].style.display = "block";
   }
@@ -211,6 +234,12 @@ businessBtn.onclick = function () {
   for (i = 0; i < all; i++) {
     allcourse[i].style.display = "none";
   }
+  /*************************change**************** */
+
+  for (k = 0; k < allMviewcourse.length; k++) {
+    allMviewcourse[k].style.setProperty("display", "none", "important");
+  }
+  /*************************change**************** */
   for (j = 0; j < business.length; j++) {
     business[j].style.display = "block";
   }
@@ -219,6 +248,12 @@ seeAll.onclick = function () {
   for (i = 0; i < all; i++) {
     allcourse[i].style.display = "block";
   }
+  /*************************change**************** */
+
+  for (k = 0; k < allMviewcourse.length; k++) {
+    allMviewcourse[k].style.setProperty("display", "inline", "important");
+  }
+  /*************************change**************** */
 };
 
 var query = document.getElementsByClassName("query-asked");
