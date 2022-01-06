@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.1/magnific-popup.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>TuteDude</title>
   </head>
@@ -351,7 +352,7 @@
           </p>
           <button class="btn-light">Explore Programs</button>
         </div>
-        <button class="video disFlex">
+        <button class="video disFlex"  onclick="lightbox_open();">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="#800780"
@@ -365,6 +366,19 @@
         </button>
       </section>
     </div>
+    <!-- --------------changes----------------- -->
+
+<div id="light">
+  <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+  <video id="TutedudeVideo" width="100%" controls>
+      <source src="https://storage.googleapis.com/test694/Tutedude%20Intro%20Video.mp4" type="video/mp4">
+      <!--Browser does not support <video> tag -->
+    </video>
+</div>
+
+<div id="fade" onClick="lightbox_close();"></div>
+
+       <!-- --------------changes----------------- -->
 
     <section class="stats">
       <div>
@@ -1107,7 +1121,6 @@
               />
             </svg>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" class="minus"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-12v-2h12v2z"/></svg>
-            </svg>
           </button>
           <div class="query-ans hidden">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
@@ -1132,7 +1145,6 @@
               />
             </svg>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" class="minus"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-12v-2h12v2z"/></svg>
-            </svg>
           </button>
           <div class="query-ans hidden">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
@@ -1332,5 +1344,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
     <script></script>
+    <script async src="//jsfiddle.net/solodev/d1thm4cq/embed/"></script>
+
   </body>
 </html>
