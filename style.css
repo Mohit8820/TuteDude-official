@@ -465,13 +465,11 @@ main .disFlex div:first-child h2 {
 }
 .brighten .video {
   width: 50%;
-  height: 24rem;
-  background-image: url(illustration.png);
-  background-position: center;
   border: none;
   color: #8a158a;
-  font-weight: 700;
-  padding: 5rem;
+
+  /****************************change remove padding************************/
+  position: relative;
   align-self: center;
 }
 .video svg {
@@ -481,7 +479,23 @@ main .disFlex div:first-child h2 {
   border-radius: 0.5rem;
 }
 /****************************change************************/
-
+.video .disFlex {
+  font-weight: 700;
+  background-image: url(illustration.png);
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+  justify-content: space-evenly;
+}
+video {
+  border-radius: 1rem;
+}
+/* 
 #fade {
   display: none;
   position: fixed;
@@ -527,7 +541,7 @@ main .disFlex div:first-child h2 {
 
 #fade:hover ~ #boxclose {
   display: none;
-}
+} */
 
 /****************************change************************/
 
@@ -1683,10 +1697,9 @@ footer a {
     font-size: 1.8rem;
     font-weight: 700;
   }
-  .video.disFlex {
+  /***********change********************/
+  .brighten .video {
     width: 28rem;
-    height: 13rem;
-    padding: 4rem;
   }
 
   .stats {

@@ -288,25 +288,30 @@ for (var i = 0; i < 4; i++) {
 }
 /****************************change************************/
 
-window.document.onkeydown = function (e) {
-  if (!e) {
-    e = Event;
-  }
-  if (e.keyCode == 27) {
-    lightbox_close();
-  }
-};
+// window.document.onkeydown = function (e) {
+//   if (!e) {
+//     e = Event;
+//   }
+//   if (e.keyCode == 27) {
+//     lightbox_close();
+//   }
+// };
 
-function lightbox_open() {
+// function lightbox_open() {
+//   var lightBoxVideo = document.getElementById("TutedudeVideo");
+//   document.getElementById("light").style.display = "block";
+//   document.getElementById("fade").style.display = "block";
+//   lightBoxVideo.play();
+// }
+
+// function lightbox_close() {
+//   var lightBoxVideo = document.getElementById("TutedudeVideo");
+//   document.getElementById("light").style.display = "none";
+//   document.getElementById("fade").style.display = "none";
+//   lightBoxVideo.pause();
+// }
+function video_open() {
   var lightBoxVideo = document.getElementById("TutedudeVideo");
-  document.getElementById("light").style.display = "block";
-  document.getElementById("fade").style.display = "block";
+  document.getElementById("thumbnail").style.display = "none";
   lightBoxVideo.play();
-}
-
-function lightbox_close() {
-  var lightBoxVideo = document.getElementById("TutedudeVideo");
-  document.getElementById("light").style.display = "none";
-  document.getElementById("fade").style.display = "none";
-  lightBoxVideo.pause();
 }

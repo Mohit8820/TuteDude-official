@@ -352,7 +352,11 @@
           </p>
           <button class="btn-light">Explore Programs</button>
         </div>
-        <button class="video disFlex"  onclick="lightbox_open();">
+        <div class="video" onclick="video_open();">
+          <video id="TutedudeVideo" width="100%" controls>
+            <source src="https://storage.googleapis.com/test694/Tutedude%20Intro%20Video.mp4" type="video/mp4">
+          </video>
+          <div class="disFlex" id="thumbnail">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="#800780"
@@ -362,21 +366,12 @@
           >
             <path d="M3 22v-20l18 10-18 10z" />
           </svg>
-          <span>Know About Tutedude</span>
-        </button>
+          <span>Know About Tutedude</span></div>
+        </div>
       </section>
     </div>
     <!-- --------------changes----------------- -->
 
-<div id="light">
-  <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
-  <video id="TutedudeVideo" width="100%" controls>
-      <source src="https://storage.googleapis.com/test694/Tutedude%20Intro%20Video.mp4" type="video/mp4">
-      <!--Browser does not support <video> tag -->
-    </video>
-</div>
-
-<div id="fade" onClick="lightbox_close();"></div>
 
        <!-- --------------changes----------------- -->
 
